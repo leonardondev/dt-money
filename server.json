@@ -1,0 +1,45 @@
+{
+  "transactions" : 
+  [
+    {
+      "id": 1,
+      "description": "Desenvolvimento de site",
+      "type": "income",
+      "category": "Venda",
+      "price": 12000,
+      "createdAt": "2022-04-13T11:07:55.799Z"
+    },
+    {
+      "id": 2,
+      "description": "Hamburger",
+      "type": "outcome",
+      "category": "Alimentação",
+      "price": 59,
+      "createdAt": "2022-04-10T16:22:38.879Z"
+    },
+    {
+      "id": 3,
+      "description": "Aluguel do apartamento",
+      "type": "outcome",
+      "category": "Casa",
+      "price": 1200,
+      "createdAt": "2022-03-27T20:41:29.069Z"
+    },
+    {
+      "id": 4,
+      "description": "Computador",
+      "type": "income",
+      "category": "Venda",
+      "price": 5400,
+      "createdAt": "2022-03-15T20:28:20.623Z"
+    },
+    {
+      "id": 5,
+      "description": "Desenvolvimento de site",
+      "type": "income",
+      "category": "Venda",
+      "price": 8000,
+      "createdAt": "2022-03-13T02:06:03.491Z"
+    }
+  ]
+}
