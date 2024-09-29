@@ -1,7 +1,9 @@
+import { useContextSelector } from 'use-context-selector'
+
 import { Header } from '../../components/Header'
 import { Summary } from '../../components/Summary'
-import { useTransactionsContext } from '../../contexts/transactionsContext'
-import { dateFormatter, priceFormatter } from '../../utils/formater'
+import { TransactionContext } from '../../contexts/transactionsContext'
+import { dateFormatter, priceFormatter } from '../../utils/formatter'
 import { SearchForm } from './components/SearchForm'
 import {
   PriceHighlight,
@@ -10,7 +12,9 @@ import {
 } from './styles'
 
 export function Transactions() {
-  const { transactions } = useTransactionsContext()
+  const transactions = useContextSelector(TransactionContext, (context) => {
+    return context.transactions
+  })
 
   return (
     <div>
