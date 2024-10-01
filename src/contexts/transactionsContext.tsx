@@ -48,7 +48,7 @@ export function TransactionsProvider({ children }: TransactionsProviderProps) {
     async (data: CreateTransactionInput) => {
       const { description, price, category, type } = data
 
-      const response = await api.post('/transactions/', {
+      const response = await api.post('/transactions', {
         description,
         type,
         category,
@@ -63,7 +63,7 @@ export function TransactionsProvider({ children }: TransactionsProviderProps) {
 
   useEffect(() => {
     fetchTransactions()
-  }, [])
+  }, [fetchTransactions])
 
   return (
     <TransactionContext.Provider
